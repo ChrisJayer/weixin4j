@@ -84,7 +84,7 @@ public class QRParameter implements Serializable {
 			long sceneValue) {
 		JSONObject sceneContent = new JSONObject();
 		JSONObject scene = new JSONObject();
-		scene.put("scene_id", sceneValue);
+		scene.put("scene_str", sceneValue);
 		sceneContent.put("scene", scene);
 		return new QRParameter(QRType.QR_SCENE, expireSeconds,
 				Long.toString(sceneValue), sceneContent);
